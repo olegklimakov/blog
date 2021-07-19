@@ -1092,7 +1092,6 @@ header nav label {
 main {
   max-width: 70rem;
   margin: 0 auto;
-  border-top: 0.5px solid #ccc;
 }
 footer {
   background: rgba(0, 0, 0, 0.8);
