@@ -1,15 +1,24 @@
-<ul>
+<div class="home-list">
 {% for post in postslist | reverse %}
   {% if post.data.published !== false %}
-    <li>
-      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <li class="home-list-item">
+      <h3>
+        <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      </h3>
+      <div class="home-list-description">
+        {{ post.data.description }}
+      </div>
       <time  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      {% set comma = joiner() %}
-      {% for tag in post.data.tags -%}
-        {% if tag !== 'posts' %}
-          {{ comma() }} <span class="tag">{{ tag }}</span>
-        {% endif %}
-      {%- endfor %}
+      <div  class="home-list-tags">
+        {% set comma = joiner() %}
+        {% for tag in post.data.tags -%}
+          {% if tag !== 'posts' %}
+            {{ comma() }}
+            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="home-list-tag">{{ tag }}</a>
+          {% endif %}
+        {%- endfor %}
+      </div>
     </li>
   {% endif %}
 {% endfor %}
