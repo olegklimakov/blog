@@ -1,5 +1,20 @@
----
-layout: layouts/base.njk
-templateClass: tmpl-home
----
-{{ content | safe }}
+<!doctype html>
+<html lang="en"
+      domain="{{ metadata.domain }}"
+>
+{% include "head.njk" %}
+<body>
+<header>
+  {% include "navigation.njk" %}
+  <h1>{{ title }}</h1>
+  {% block extraArticleHeader %}{% endblock %}
+  <dialog id="message"></dialog>
+</header>
+
+<main>
+  {{ content | safe }}
+</main>
+{% include "footer.njk" %}
+</body>
+</html>
+
