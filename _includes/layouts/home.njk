@@ -2,10 +2,10 @@
 <html lang="en"
       domain="{{ metadata.domain }}"
 >
-{% include "head.njk" %}
+{% include "layouts/head.njk" %}
 <body>
 <header>
-  {% include "navigation.njk" %}
+  {% include "layouts/navigation.njk" %}
   <h1>{{ title }}</h1>
   {% block extraArticleHeader %}{% endblock %}
   <dialog id="message"></dialog>
@@ -14,7 +14,7 @@
 <main>
   {{ content | safe }}
 </main>
-{% include "footer.njk" %}
+{% include "layouts/footer.njk" %}
 </body>
 </html>
 
