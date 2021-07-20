@@ -1090,6 +1090,7 @@ header nav label {
   text-align: right;
 }
 main {
+  min-height: calc(100vh - 485px);
   max-width: 70rem;
   margin: 0 auto;
 }

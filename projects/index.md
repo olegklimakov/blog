@@ -1,10 +1,12 @@
 ---
+published: false
 layout: layouts/base.njk
 title: Projects
 templateClass: tmpl-post
 eleventyNavigation:
   key: Projects
   order: 2
+  published: false
 ---
 
 I am a person that writes stuff.

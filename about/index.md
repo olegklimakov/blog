@@ -5,6 +5,7 @@ templateClass: tmpl-post
 eleventyNavigation:
   key: About
   order: 3
+  published: false
 ---
 
 I am a person that writes stuff.
