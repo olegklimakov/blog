@@ -36,7 +36,7 @@
         Спасибо за прочтение! Если вам понравилась статья, вы можете ею <a href="{{ shareUrl | safe }}" on-click="share">поделиться</a> в вашей любимой социальной сети.
       </p>
       <p>
-        Чтобы узнавать о выходе новых статей, <a href="https://t.me/klimakov_blog" target="_blank"> подписывайтесь на телеграм канал </a>
+        Чтобы узнавать о выходе новых статей, <a  rel="noopener" href="https://t.me/klimakov_blog" target="_blank"> подписывайтесь на телеграм канал </a>
       </p>
       {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
       {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
