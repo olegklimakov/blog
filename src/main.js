@@ -47,7 +47,7 @@ function share(anchor) {
     });
   } else if (navigator.clipboard) {
     navigator.clipboard.writeText(url);
-    message("Article URL copied to clipboard.");
+    message("Ссылка на статью скопирована.");
   } else {
     tweet_(url);
   }

@@ -4,9 +4,9 @@
   --primary-dark: #e7bf60;
   --bg: #EEE2DC;
   --text: #0B0C10;
-  --link: #AC3B61;
-  --title: #66FCF1;
+  --link: #123C69;
   --tag: #EDC7B7;
+  --code: #2d2d2d;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -74,8 +74,12 @@ share-widget button:active {
   transform: scale(1.2);
 }
 
+.tmpl-post > .post-title {
+  background-color: red;
+}
+
 dialog {
-  background-color: #8dff80;
+  background-color: var(--tag);
   position: fixed;
   opacity: 0.9;
   z-index: 1000;
@@ -95,10 +99,17 @@ dialog {
   flex-direction: column;
 }
 
+.home-list-footer {
+  display: flex;
+  align-items: center;
+}
+
 .home-list-tags {
   padding: 0;
   display: flex;
-  margin-top: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .home-list-tag {
@@ -850,7 +861,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family);
-  color: var(--primary);
+  color: var(--text);
 }
 h2,
 h4,
@@ -992,13 +1003,13 @@ input[type="submit"][disabled] {
 button:not([disabled]),
 button[type="submit"],
 input[type="submit"] {
-  background: #f9c412;
+  background: var(--link);
   color: #181818;
 }
 button:not([disabled]):hover,
 button[type="submit"]:hover,
 input[type="submit"]:hover {
-  background: #ba9005;
+  background: var(--link);
   color: #000;
 }
 input[type="color"],
@@ -1243,7 +1254,7 @@ pre[class*="language-"] {
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--bg);
+  background: var(--code);
   border: 1px solid var(--primary);
 }
 :not(pre) > code[class*="language-"] {
@@ -1322,7 +1333,7 @@ button:not([disabled]) {
 input[type="submit"]:hover,
 button[type="submit"]:hover,
 button:not([disabled]):hover {
-  background: var(--primary-dark);
+  background: var(--tag);
 }
 
 dd + dt {
@@ -1334,7 +1345,7 @@ blockquote {
 }
 
 mark {
-  background: var(--primary);
+  background: var(--primary-dark);
 }
 
 a {

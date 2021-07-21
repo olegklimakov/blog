@@ -4,7 +4,6 @@ templateClass: tmpl-post
 ---
 {% extends "layouts/base.njk" %}
 
-
 {% block extraArticleHeader %}
    {% set wc = content | striptags | wordcount %}
    {% set wPerMinute = (wc / 240) + 1 %}
@@ -17,7 +16,6 @@ templateClass: tmpl-post
 
 {% block article %}
 {{ content | safe }}
-
   <h1>🙏🙏🙏</h1>
   <p>
     Спасибо за прочтение! Если вам понравилась статья, вы можете ею <a href="{{ shareUrl | safe }}" on-click="share">поделиться</a> в вашей любимой социальной сети.
@@ -25,6 +23,15 @@ templateClass: tmpl-post
   <p>
     Чтобы оставаться в курсе новых статей <a href="https://t.me/klimakov_blog" target="_blank"> подписывайтесь на телеграм канал </a>
   </p>
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {%- if nextPost or previousPost %}
+    <hr>
+
+      {%- if nextPost %}<div>Следующий пост: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></div>{% endif %}
+      {%- if previousPost %}<div>Предыдущий: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></div>{% endif %}
+
+  {%- endif %}
 
 <share-widget>
   <button on-click="share" aria-label="Share" href="{{ shareUrl | safe }}">

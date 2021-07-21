@@ -22,5 +22,6 @@
   },
   "publisher": {
     "name": "Publisher name. Update me."
-  }
+  },
+  "post_image": "/img/persik.svg"
 }

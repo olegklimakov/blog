@@ -8,16 +8,18 @@
       <div class="home-list-description">
         {{ post.data.description }}
       </div>
-      <time  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      <div  class="home-list-tags">
-        {% set comma = joiner() %}
-        {% for tag in post.data.tags -%}
-          {% if tag !== 'posts' %}
-            {{ comma() }}
-            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-            <a href="{{ tagUrl | url }}" class="home-list-tag">{{ tag }}</a>
-          {% endif %}
-        {%- endfor %}
+      <div class="home-list-footer">
+        <time  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <div  class="home-list-tags">
+          {% set comma = joiner() %}
+          {% for tag in post.data.tags -%}
+            {% if tag !== 'posts' %}
+              {{ comma() }}
+              {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              <a href="{{ tagUrl | url }}" class="home-list-tag">{{ tag }}</a>
+            {% endif %}
+          {%- endfor %}
+        </div>
       </div>
     </li>
   {% endif %}
