@@ -61,6 +61,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
+  eleventyConfig.addShortcode('readingTime', function(text){
+    // get entire post content element
+    let wordCount = `${text}`.match(/\b[-?(\w+)?]+\b/gi).length;
+    //calculate time in munites based on average reading time
+    let timeInMinutes = (wordCount / 225)
+    //validation as we don't want it to show 0 if time is under 30 seconds
+    let output;
+    if(timeInMinutes <= 0.5) {
+      output = 1;
+    } else {
+      //round to nearest minute
+      output = Math.round(timeInMinutes);
+    }
+
+    return `Чтение займет: ${output}` + ' м.' + ``;
+  });
+
   eleventyConfig.addPlugin(localImages, {
     distPath: "_site",
     assetPath: "/img/remote",

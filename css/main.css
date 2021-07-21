@@ -74,8 +74,19 @@ share-widget button:active {
   transform: scale(1.2);
 }
 
-.tmpl-post > .post-title {
-  background-color: red;
+.title-block {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: column;
+  background-image: url("/img/persik.svg");
+  background-size: cover;
+}
+
+.post-title {
+  margin: 0 0 20px 0;
 }
 
 dialog {
@@ -1090,7 +1101,7 @@ header label {
   display: none;
 }
 header {
-  padding: 4.5em 1.5em 3em;
+  height: 70px;
   width: 37.5em;
   margin: 0 auto;
   text-align: center;
@@ -1114,10 +1125,6 @@ header nav {
   text-align: right;
   border-bottom: 1px solid var(--primary);
   height: 70px;
-  display: flex;
-  align-items: center;
-}
-header nav #nav {
   display: flex;
   align-items: center;
 }
