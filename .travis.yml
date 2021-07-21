@@ -3,6 +3,8 @@ node_js:
   - 10
 before_script:
   - npm install @11ty/eleventy -g
+  - npm install
+  - npm run build
 script: eleventy --pathprefix="/"
 deploy:
   local-dir: _site
