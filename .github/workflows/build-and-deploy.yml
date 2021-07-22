@@ -26,7 +26,6 @@ jobs:
           npm ci
           npm run build
 
-      - uses: actions/checkout@master
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
