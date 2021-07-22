@@ -30,8 +30,8 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: "./CNAME"
-          target: "./_site/CNAME"
+          source: "CNAME"
+          target: "_site/CNAME"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
