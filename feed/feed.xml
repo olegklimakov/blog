@@ -5,7 +5,7 @@
 	
 	<link href="https://klimakov.me/feed/feed.xml" rel="self"/>
 	<link href="https://klimakov.me"/>
-	<updated>2021-05-20T00:00:00-00:00</updated>
+	<updated>2021-07-26T00:00:00-00:00</updated>
 	<id>https://klimakov.me</id>
 	<author>
 		<name>Author Name. Update me.</name>
@@ -123,6 +123,26 @@
 &lt;p&gt;Все предыдущие пункты не имеют смысла, если вы полученные знания просто складываете в стол. Онлайн курсы я год проходил и перепроходил, через неделю паузы всё забывается на прочь. Проходишь их заново, и так в бесконечном цикле, потому что не получится без пауз. Чтобы такой проблемы не было - сразу применяйте полученные знания на практике. Идеально, если удастся применить на работе, но в крайнем случае пишите домашние проекты (приватные репозитории и никто не узнает, даже, если вы напишите ужасный код).&lt;/p&gt;
 &lt;h1 id=&quot;%D0%B4%D0%B0%D0%BB%D1%8C%D1%88%D0%B5&quot;&gt;Дальше &lt;a class=&quot;direct-link&quot; href=&quot;#%D0%B4%D0%B0%D0%BB%D1%8C%D1%88%D0%B5&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;В следующей статье расскажу про свой старт карьеры в IT и как вам стартануть, если вы еще не там.&lt;/p&gt;
+
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Настройки сайта для социальных сетей</title>
+		<link href="https://klimakov.me/how-to-update-preview-in-telegram/"/>
+		<updated>2021-07-26T00:00:00-00:00</updated>
+		<id>https://klimakov.me/how-to-update-preview-in-telegram/</id>
+		<content type="html">
+		  &lt;h1 id=&quot;&quot;&gt; &lt;a class=&quot;direct-link&quot; href=&quot;#&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Когда вы делитесь ссылкой в соц сетях на ваш сайт, думаю вы захотите чтобы ссылка подгружала еще и описание и картинку. Это позволит еще до захода на сайт понять краткую информацию о том, что их по этой ссылке ждёт.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://paper-attachments.dropbox.com/s_7B204BE2F04460F624F00D3E5A7703C3103EDB20DEC16C751BFBCD6C59F81001_1627288744420_++2021-07-26++11.38.53.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Как же сделать чтобы соцсети умели так отображать ваш сайт?&lt;br&gt;
+Для описания вам внутри тега &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; в html вашей страницы добавить &lt;code&gt;&amp;lt;meta content=&amp;quot;Описание вашего сайта&amp;quot; property=&amp;quot;og:description&amp;quot;&amp;gt;&lt;/code&gt;&lt;br&gt;
+Для картинки &lt;code&gt;&amp;lt;meta content=&amp;quot;ссылка на ваше изображение&amp;quot; property=&amp;quot;og:image&amp;quot;&amp;gt;&lt;/code&gt;&lt;br&gt;
+Для названия сайта &lt;code&gt;&amp;lt;meta content=&amp;quot;Название сайта&amp;quot; property=&amp;quot;og:title&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC&quot;&gt;Решение проблем &lt;a class=&quot;direct-link&quot; href=&quot;#%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;telegram%3A&quot;&gt;Telegram: &lt;a class=&quot;direct-link&quot; href=&quot;#telegram%3A&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Бывает ситуация что данные в тегах вы добавили или обновили, а превью вашего сайта не изменилось. В такой ситуации &lt;a href=&quot;https://t.me/WebpageBot&quot;&gt;вам поможет бот&lt;/a&gt;. Отправьте ему ссылку на ваш сайт и он обновит все настройки.&lt;/p&gt;
 
 		</content>
 	</entry>
