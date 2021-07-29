@@ -41,6 +41,8 @@ const CSP = {
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
     ["img-src", SELF, "data:"],
+    ["script-src-elem", SELF, quote("unsafe-inline"),  "https://utteranc.es"],
+    ['frame-src', 'https://utteranc.es']
 
     // To add new rules, add new array literals here or extend those above with
     // additional allowed elements.
