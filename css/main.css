@@ -100,6 +100,11 @@ dialog {
   padding: 0;
 }
 
+.nav__right {
+  display: flex;
+  align-items: flex-end;
+}
+
 .home-list-item {
   border-bottom: 5px solid var(--primary);
   border-radius: 5px;
@@ -154,6 +159,7 @@ header aside {
 #nav {
   z-index: 2;
   position: relative;
+  width: 100%;
 }
 
 #reading-progress {
@@ -276,14 +282,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 100;
   src: url("/fonts/Inter-Thin.woff2") format("woff2"),
-    url("/fonts/Inter-Thin.woff") format("woff");
+  url("/fonts/Inter-Thin.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 100;
   src: url("/fonts/Inter-ThinItalic.woff2") format("woff2"),
-    url("/fonts/Inter-ThinItalic.woff") format("woff");
+  url("/fonts/Inter-ThinItalic.woff") format("woff");
 }
 
 @font-face {
@@ -291,14 +297,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 200;
   src: url("/fonts/Inter-ExtraLight.woff2") format("woff2"),
-    url("/fonts/Inter-ExtraLight.woff") format("woff");
+  url("/fonts/Inter-ExtraLight.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 200;
   src: url("/fonts/Inter-ExtraLightItalic.woff2") format("woff2"),
-    url("/fonts/Inter-ExtraLightItalic.woff") format("woff");
+  url("/fonts/Inter-ExtraLightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -306,14 +312,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 300;
   src: url("/fonts/Inter-Light.woff2") format("woff2"),
-    url("/fonts/Inter-Light.woff") format("woff");
+  url("/fonts/Inter-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 300;
   src: url("/fonts/Inter-LightItalic.woff2") format("woff2"),
-    url("/fonts/Inter-LightItalic.woff") format("woff");
+  url("/fonts/Inter-LightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -321,14 +327,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/Inter-Regular.woff2") format("woff2"),
-    url("/fonts/Inter-Regular.woff") format("woff");
+  url("/fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 400;
   src: url("/fonts/Inter-Italic.woff2") format("woff2"),
-    url("/fonts/Inter-Italic.woff") format("woff");
+  url("/fonts/Inter-Italic.woff") format("woff");
 }
 
 @font-face {
@@ -336,14 +342,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 500;
   src: url("/fonts/Inter-Medium.woff2") format("woff2"),
-    url("/fonts/Inter-Medium.woff") format("woff");
+  url("/fonts/Inter-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 500;
   src: url("/fonts/Inter-MediumItalic.woff2") format("woff2"),
-    url("/fonts/Inter-MediumItalic.woff") format("woff");
+  url("/fonts/Inter-MediumItalic.woff") format("woff");
 }
 
 @font-face {
@@ -351,14 +357,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 600;
   src: url("/fonts/Inter-SemiBold.woff2") format("woff2"),
-    url("/fonts/Inter-SemiBold.woff") format("woff");
+  url("/fonts/Inter-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 600;
   src: url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2"),
-    url("/fonts/Inter-SemiBoldItalic.woff") format("woff");
+  url("/fonts/Inter-SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -366,14 +372,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 700;
   src: url("/fonts/Inter-Bold.woff2") format("woff2"),
-    url("/fonts/Inter-Bold.woff") format("woff");
+  url("/fonts/Inter-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 700;
   src: url("/fonts/Inter-BoldItalic.woff2") format("woff2"),
-    url("/fonts/Inter-BoldItalic.woff") format("woff");
+  url("/fonts/Inter-BoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -381,14 +387,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 800;
   src: url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
-    url("/fonts/Inter-ExtraBold.woff") format("woff");
+  url("/fonts/Inter-ExtraBold.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 800;
   src: url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"),
-    url("/fonts/Inter-ExtraBoldItalic.woff") format("woff");
+  url("/fonts/Inter-ExtraBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -396,14 +402,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   font-style: normal;
   font-weight: 900;
   src: url("/fonts/Inter-Black.woff2") format("woff2"),
-    url("/fonts/Inter-Black.woff") format("woff");
+  url("/fonts/Inter-Black.woff") format("woff");
 }
 @font-face {
   font-family: "Inter UI";
   font-style: italic;
   font-weight: 900;
   src: url("/fonts/Inter-BlackItalic.woff2") format("woff2"),
-    url("/fonts/Inter-BlackItalic.woff") format("woff");
+  url("/fonts/Inter-BlackItalic.woff") format("woff");
 }
 
 /* --------------------------------------------------------------------------
@@ -841,9 +847,9 @@ table {
 }
 pre {
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  background: #2d2d2d;
 }
 pre code:not([class]) {
-  padding: 1.5em;
   overflow-x: scroll;
 }
 code,
@@ -1082,6 +1088,10 @@ section {
 header label {
   display: block;
 }
+.base-title {
+  margin-top: 0;
+  text-align: center;
+}
 #menu-toggle:checked ~ a {
   display: block;
   padding: 0.75em 0;
@@ -1157,12 +1167,12 @@ header nav label {
   text-align: right;
 }
 main {
-  min-height: calc(100vh - 485px);
+  min-height: calc(100vh - 200px);
   max-width: 70rem;
   margin: 0 auto;
 }
 .main-home {
-  min-height: calc(100vh - 250px);
+  min-height: calc(100vh - 200px);
 }
 
 footer {
