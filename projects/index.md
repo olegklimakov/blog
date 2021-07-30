@@ -1,5 +1,6 @@
 ---
 published: false
+eleventyExcludeFromCollections: true
 layout: layouts/base.njk
 title: Projects
 templateClass: tmpl-post
