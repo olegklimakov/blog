@@ -134,7 +134,7 @@
 		<id>https://klimakov.me/how-to-update-preview-in-telegram/</id>
 		<content type="html">
 		  &lt;p&gt;Когда вы делитесь ссылкой в соц сетях на ваш сайт, думаю вы захотите чтобы ссылка подгружала еще и описание и картинку. Это позволит еще до захода на сайт понять краткую информацию о том, что их по этой ссылке ждёт.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://paper-attachments.dropbox.com/s_7B204BE2F04460F624F00D3E5A7703C3103EDB20DEC16C751BFBCD6C59F81001_1627288744420_++2021-07-26++11.38.53.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://paper-attachments.dropbox.com/s_7B204BE2F04460F624F00D3E5A7703C3103EDB20DEC16C751BFBCD6C59F81001_1627288744420_++2021-07-26++11.38.53.png&quot; alt=&quot;Пример картинки&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Как же сделать чтобы соцсети умели так отображать ваш сайт?&lt;br&gt;
 Для описания вам внутри тега &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; в html вашей страницы добавить &lt;code&gt;&amp;lt;meta content=&amp;quot;Описание вашего сайта&amp;quot; property=&amp;quot;og:description&amp;quot;&amp;gt;&lt;/code&gt;&lt;br&gt;
 Для картинки &lt;code&gt;&amp;lt;meta content=&amp;quot;ссылка на ваше изображение&amp;quot; property=&amp;quot;og:image&amp;quot;&amp;gt;&lt;/code&gt;&lt;br&gt;
